@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SlideToRevealImage_Example' do
+  pod 'SlideToRevealImage', :path => '../'
+
+  target 'SlideToRevealImage_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

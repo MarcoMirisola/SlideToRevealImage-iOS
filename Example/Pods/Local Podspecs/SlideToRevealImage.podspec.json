@@ -1,0 +1,22 @@
+{
+  "name": "SlideToRevealImage",
+  "version": "0.1.0",
+  "summary": "A short description of SlideToRevealImage.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Marco Mirisola/SlideToRevealImage",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Marco Mirisola": "marco.mirisola@ettsolutions.com"
+  },
+  "source": {
+    "git": "https://github.com/Marco Mirisola/SlideToRevealImage.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SlideToRevealImage/Classes/**/*"
+}
