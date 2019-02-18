@@ -22,7 +22,7 @@ pod 'SlideToRevealImage'
 
 ## Author
 
-Marco Mirisola, marco.mirisola@ettsolutions.com
+Marco Mirisola, info@marcomirisola.it
 
 ## License
 
