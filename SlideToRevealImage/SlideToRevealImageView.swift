@@ -150,8 +150,8 @@ extension SlideToRevealImageView {
         switch sender.state {
         case .began, .changed:
             var newLeading = originRect.origin.x + translation.x
-            newLeading = max(newLeading, 20)
-            newLeading = min(frame.width - 20, newLeading)
+            newLeading = max(newLeading, 0)
+            newLeading = min(frame.width, newLeading)
             leading.constant = newLeading
             layoutIfNeeded()
         case .ended, .cancelled:
