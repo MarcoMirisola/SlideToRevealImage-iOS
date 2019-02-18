@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18D3B071FD498302592AC744C18EA188 /* SlideToRevealImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5308D8BFEB52CFDDC60F02DB85C71378 /* SlideToRevealImageView.swift */; };
 		214EF3FA9D38BD9562E8E84CABAD6BAD /* Pods-SlideToRevealImage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BF32BA1DFD590847D8D422150AC344 /* Pods-SlideToRevealImage_Example-dummy.m */; };
-		4AD1D6623EB5382BD2F6C27784CC097F /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F322922191800CBBC11BE3A64AB175 /* ReplaceMe.swift */; };
+		3D5CC688A924F7BD6EED8A3DB1CAE94E /* SlideToRevealImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8ED487E68245EEC1BB56F5A672BE0E /* SlideToRevealImage-dummy.m */; };
 		5208E8741EAD244698DA74E96514EF61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		53DECC19A48D03B781DAB741A374D30F /* SlideToRevealImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEB48A647C14AFD0A1CEB76BB210B4F /* SlideToRevealImage-dummy.m */; };
 		5599682168057A05843F59A51A232774 /* Pods-SlideToRevealImage_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C07FE32DA88D559B47BD5F77153FA9D /* Pods-SlideToRevealImage_Tests-dummy.m */; };
 		6B4824912A4030CDC5F575179618C9D4 /* Pods-SlideToRevealImage_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E5F734FAA4769A7796933CF2ECB0546 /* Pods-SlideToRevealImage_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F563AB43BE4578AF45FA4767F9CE11B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		C508C152646E3AE32B3DAA1A353D5D67 /* Pods-SlideToRevealImage_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F170ADD6461271465D3BE9A7DF5F3B2 /* Pods-SlideToRevealImage_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE4E993BE3CAB22710F6A6CEF4794780 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		EF05B9A3E61B8F861E54863B452C1418 /* SlideToRevealImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24330C6CD96EB23A518148EE98E753D9 /* SlideToRevealImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF05B9A3E61B8F861E54863B452C1418 /* SlideToRevealImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80F88BCE414D9E00A502AA564079D6B1 /* SlideToRevealImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,41 +37,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00ACFCC7FB86EACB5C5F8B4759748CD8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		01620CDB2D59AC16DAE3BDE5F0EF3109 /* Pods-SlideToRevealImage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlideToRevealImage_Example.release.xcconfig"; sourceTree = "<group>"; };
 		05B14C5492B55B225931F401F42EEFA4 /* Pods-SlideToRevealImage_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SlideToRevealImage_Tests.modulemap"; sourceTree = "<group>"; };
 		05BF32BA1DFD590847D8D422150AC344 /* Pods-SlideToRevealImage_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SlideToRevealImage_Example-dummy.m"; sourceTree = "<group>"; };
 		0927214A9E0FFD70D3530E2568DF6E04 /* Pods-SlideToRevealImage_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SlideToRevealImage_Example-frameworks.sh"; sourceTree = "<group>"; };
 		0F798D47BEB0512CC9ACFCACBD9F02A0 /* Pods-SlideToRevealImage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SlideToRevealImage_Example.modulemap"; sourceTree = "<group>"; };
 		1D452ADC2DE7EC6D40466C560F02C5DC /* Pods-SlideToRevealImage_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SlideToRevealImage_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		21BB4CBEC45B528B9014D32185B50AAA /* SlideToRevealImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SlideToRevealImage.modulemap; sourceTree = "<group>"; };
-		24330C6CD96EB23A518148EE98E753D9 /* SlideToRevealImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideToRevealImage-umbrella.h"; sourceTree = "<group>"; };
+		1ED7E9456901103BA7369D4E0271946C /* SlideToRevealImage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SlideToRevealImage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		29ECC4A422AB81DA7A3D84FB8FE43894 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B61398508B84B8475F53E3D28FFC6F5 /* SlideToRevealImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SlideToRevealImage.modulemap; sourceTree = "<group>"; };
 		3C5B518C4395979BCBEA027BD417A0BA /* Pods-SlideToRevealImage_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SlideToRevealImage_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		45ACB464AEB8EED53A75A6C5DBAC3940 /* SlideToRevealImage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SlideToRevealImage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		48F322922191800CBBC11BE3A64AB175 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SlideToRevealImage/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		476BDB9ED4630C8A1080D117A7FB118B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		4E5F734FAA4769A7796933CF2ECB0546 /* Pods-SlideToRevealImage_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SlideToRevealImage_Tests-umbrella.h"; sourceTree = "<group>"; };
+		5308D8BFEB52CFDDC60F02DB85C71378 /* SlideToRevealImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideToRevealImageView.swift; path = SlideToRevealImage/Classes/SlideToRevealImageView.swift; sourceTree = "<group>"; };
 		54DA2DC42F74EFCBB762E4A533EB3A08 /* Pods-SlideToRevealImage_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SlideToRevealImage_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5D36ED9933E7EB78ED44C6774C57A272 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D8ED487E68245EEC1BB56F5A672BE0E /* SlideToRevealImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SlideToRevealImage-dummy.m"; sourceTree = "<group>"; };
 		5DC1B2BC08697D45B5B92B18F3A1BC44 /* Pods-SlideToRevealImage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlideToRevealImage_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6F170ADD6461271465D3BE9A7DF5F3B2 /* Pods-SlideToRevealImage_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SlideToRevealImage_Example-umbrella.h"; sourceTree = "<group>"; };
 		7C07FE32DA88D559B47BD5F77153FA9D /* Pods-SlideToRevealImage_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SlideToRevealImage_Tests-dummy.m"; sourceTree = "<group>"; };
+		80F88BCE414D9E00A502AA564079D6B1 /* SlideToRevealImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideToRevealImage-umbrella.h"; sourceTree = "<group>"; };
 		8157878A6EA9932E30893434650A046D /* Pods-SlideToRevealImage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlideToRevealImage_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8225449F97C8F5461C499C4780E6941A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CBBA94E3FC40C042656B8DA2EDFAA6B /* Pods-SlideToRevealImage_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SlideToRevealImage_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A91C921BC6692BF4FE6787AD394D42D4 /* Pods-SlideToRevealImage_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SlideToRevealImage_Tests-resources.sh"; sourceTree = "<group>"; };
-		B408CF9C5BFCBF7EC6275EEA1969B39C /* Pods_SlideToRevealImage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideToRevealImage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBEB48A647C14AFD0A1CEB76BB210B4F /* SlideToRevealImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SlideToRevealImage-dummy.m"; sourceTree = "<group>"; };
-		C0E9EB2BF4BADD4D18ACBB1BA786A4A0 /* SlideToRevealImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SlideToRevealImage.xcconfig; sourceTree = "<group>"; };
+		B408CF9C5BFCBF7EC6275EEA1969B39C /* Pods_SlideToRevealImage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SlideToRevealImage_Example.framework; path = "Pods-SlideToRevealImage_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5CBD4DA6E09FD2B9CC9976E8E89E3B3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B73991CC69591D66EE6F2293367767A7 /* SlideToRevealImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SlideToRevealImage.xcconfig; sourceTree = "<group>"; };
 		C144491CC2A7F464ECDC32E9B908FECB /* Pods-SlideToRevealImage_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SlideToRevealImage_Example-resources.sh"; sourceTree = "<group>"; };
 		C6074A4BE79B11E4FFE9E1AC2932A807 /* Pods-SlideToRevealImage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SlideToRevealImage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D29B703B012B6F7106CE4119EA818515 /* SlideToRevealImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideToRevealImage-prefix.pch"; sourceTree = "<group>"; };
+		E23867A91CF8EBF63693C960636CDFEA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6AEA8DCCACF86AFC4AC756448FA7F08 /* Pods-SlideToRevealImage_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SlideToRevealImage_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F0C6C0A153DE0272495930FB5A6B6E95 /* SlideToRevealImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SlideToRevealImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F71B39EED582E139E99FC5EA33B5DA0F /* SlideToRevealImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideToRevealImage-prefix.pch"; sourceTree = "<group>"; };
-		F82261DA19147D463DC287FAF0B93A95 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FF3B6DB0B738B7B7D75D4A83C244423A /* Pods_SlideToRevealImage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideToRevealImage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0C6C0A153DE0272495930FB5A6B6E95 /* SlideToRevealImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SlideToRevealImage.framework; path = SlideToRevealImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF3B6DB0B738B7B7D75D4A83C244423A /* Pods_SlideToRevealImage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SlideToRevealImage_Tests.framework; path = "Pods-SlideToRevealImage_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +120,20 @@
 			path = "Target Support Files/Pods-SlideToRevealImage_Tests";
 			sourceTree = "<group>";
 		};
+		261076DA46D1F824AACA96A5AAC7831F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E23867A91CF8EBF63693C960636CDFEA /* Info.plist */,
+				2B61398508B84B8475F53E3D28FFC6F5 /* SlideToRevealImage.modulemap */,
+				B73991CC69591D66EE6F2293367767A7 /* SlideToRevealImage.xcconfig */,
+				5D8ED487E68245EEC1BB56F5A672BE0E /* SlideToRevealImage-dummy.m */,
+				D29B703B012B6F7106CE4119EA818515 /* SlideToRevealImage-prefix.pch */,
+				80F88BCE414D9E00A502AA564079D6B1 /* SlideToRevealImage-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SlideToRevealImage";
+			sourceTree = "<group>";
+		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,24 +142,10 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6D4AF4B5E54E015FBA62B8B33951A747 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5D36ED9933E7EB78ED44C6774C57A272 /* Info.plist */,
-				21BB4CBEC45B528B9014D32185B50AAA /* SlideToRevealImage.modulemap */,
-				C0E9EB2BF4BADD4D18ACBB1BA786A4A0 /* SlideToRevealImage.xcconfig */,
-				BBEB48A647C14AFD0A1CEB76BB210B4F /* SlideToRevealImage-dummy.m */,
-				F71B39EED582E139E99FC5EA33B5DA0F /* SlideToRevealImage-prefix.pch */,
-				24330C6CD96EB23A518148EE98E753D9 /* SlideToRevealImage-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SlideToRevealImage";
-			sourceTree = "<group>";
-		};
 		6EF6681802C538D0D770A2A3D862491B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B76DA7564356A6AC385D3B5661A5C221 /* SlideToRevealImage */,
+				A2F2FD7821642558418F50DC007EFF00 /* SlideToRevealImage */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -170,14 +170,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		8A98CA67D52853FDEB6D1A6355A4BCF9 /* Pod */ = {
+		A2F2FD7821642558418F50DC007EFF00 /* SlideToRevealImage */ = {
 			isa = PBXGroup;
 			children = (
-				00ACFCC7FB86EACB5C5F8B4759748CD8 /* LICENSE */,
-				F82261DA19147D463DC287FAF0B93A95 /* README.md */,
-				45ACB464AEB8EED53A75A6C5DBAC3940 /* SlideToRevealImage.podspec */,
+				5308D8BFEB52CFDDC60F02DB85C71378 /* SlideToRevealImageView.swift */,
+				FCA7A4F261184E038DF54B94D667FA35 /* Pod */,
+				261076DA46D1F824AACA96A5AAC7831F /* Support Files */,
 			);
-			name = Pod;
+			name = SlideToRevealImage;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		A7A82BC56A4536FF17D935FFCF0DAB6F /* Pods-SlideToRevealImage_Example */ = {
@@ -198,23 +199,22 @@
 			path = "Target Support Files/Pods-SlideToRevealImage_Example";
 			sourceTree = "<group>";
 		};
-		B76DA7564356A6AC385D3B5661A5C221 /* SlideToRevealImage */ = {
-			isa = PBXGroup;
-			children = (
-				48F322922191800CBBC11BE3A64AB175 /* ReplaceMe.swift */,
-				8A98CA67D52853FDEB6D1A6355A4BCF9 /* Pod */,
-				6D4AF4B5E54E015FBA62B8B33951A747 /* Support Files */,
-			);
-			name = SlideToRevealImage;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCA7A4F261184E038DF54B94D667FA35 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B5CBD4DA6E09FD2B9CC9976E8E89E3B3 /* LICENSE */,
+				476BDB9ED4630C8A1080D117A7FB118B /* README.md */,
+				1ED7E9456901103BA7369D4E0271946C /* SlideToRevealImage.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		FCE799B6ED8C34C62E9384D6E55EE8FC /* Products */ = {
@@ -279,7 +279,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 371360B68DC04604555AFFE9B2830D05 /* Build configuration list for PBXNativeTarget "SlideToRevealImage" */;
 			buildPhases = (
-				E73C11DF1B5FA9A26C8D5A7DDE862A64 /* Sources */,
+				7B3A0BB2571EE73D4BA8559B9D6B5E05 /* Sources */,
 				18C881152F2979CD54AF1538B8E56889 /* Frameworks */,
 				1009795B5B273598A368F4EF73C15DC4 /* Headers */,
 			);
@@ -317,12 +317,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1010;
-				TargetAttributes = {
-					9FCF79765592CB14F180D5B617E1B7E4 = {
-						LastSwiftMigration = 1010;
-					};
-				};
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -352,20 +347,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B3A0BB2571EE73D4BA8559B9D6B5E05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5CC688A924F7BD6EED8A3DB1CAE94E /* SlideToRevealImage-dummy.m in Sources */,
+				18D3B071FD498302592AC744C18EA188 /* SlideToRevealImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B63EBBD4CF651207DEBDEB8B5E8471D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5599682168057A05843F59A51A232774 /* Pods-SlideToRevealImage_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E73C11DF1B5FA9A26C8D5A7DDE862A64 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4AD1D6623EB5382BD2F6C27784CC097F /* ReplaceMe.swift in Sources */,
-				53DECC19A48D03B781DAB741A374D30F /* SlideToRevealImage-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,71 +548,6 @@
 			};
 			name = Debug;
 		};
-		950DAC89BE59672D13C49DB5C6FD373C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0E9EB2BF4BADD4D18ACBB1BA786A4A0 /* SlideToRevealImage.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SlideToRevealImage/SlideToRevealImage-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SlideToRevealImage/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SlideToRevealImage/SlideToRevealImage.modulemap";
-				PRODUCT_MODULE_NAME = SlideToRevealImage;
-				PRODUCT_NAME = SlideToRevealImage;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A83900D7BEA3B342DD0DDFB99513A761 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0E9EB2BF4BADD4D18ACBB1BA786A4A0 /* SlideToRevealImage.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SlideToRevealImage/SlideToRevealImage-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SlideToRevealImage/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SlideToRevealImage/SlideToRevealImage.modulemap";
-				PRODUCT_MODULE_NAME = SlideToRevealImage;
-				PRODUCT_NAME = SlideToRevealImage;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -672,7 +602,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -711,6 +640,71 @@
 			};
 			name = Release;
 		};
+		F25FB691C2CC6CB9B7C91434DBCC0C58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B73991CC69591D66EE6F2293367767A7 /* SlideToRevealImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SlideToRevealImage/SlideToRevealImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlideToRevealImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SlideToRevealImage/SlideToRevealImage.modulemap";
+				PRODUCT_MODULE_NAME = SlideToRevealImage;
+				PRODUCT_NAME = SlideToRevealImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F2ECC6EB85997140211F969CC6D8EEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B73991CC69591D66EE6F2293367767A7 /* SlideToRevealImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SlideToRevealImage/SlideToRevealImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlideToRevealImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SlideToRevealImage/SlideToRevealImage.modulemap";
+				PRODUCT_MODULE_NAME = SlideToRevealImage;
+				PRODUCT_NAME = SlideToRevealImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -726,8 +720,8 @@
 		371360B68DC04604555AFFE9B2830D05 /* Build configuration list for PBXNativeTarget "SlideToRevealImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				950DAC89BE59672D13C49DB5C6FD373C /* Debug */,
-				A83900D7BEA3B342DD0DDFB99513A761 /* Release */,
+				F2ECC6EB85997140211F969CC6D8EEBB /* Debug */,
+				F25FB691C2CC6CB9B7C91434DBCC0C58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
