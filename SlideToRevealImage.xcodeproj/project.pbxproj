@@ -12,7 +12,7 @@
 		CC858914221ABC1400EEC41D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC858912221ABC1400EEC41D /* Main.storyboard */; };
 		CC858916221ABC1500EEC41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC858915221ABC1500EEC41D /* Assets.xcassets */; };
 		CC858919221ABC1500EEC41D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC858917221ABC1500EEC41D /* LaunchScreen.storyboard */; };
-		CC858921221ABC3000EEC41D /* BeforeAfterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC858920221ABC3000EEC41D /* BeforeAfterView.swift */; };
+		CC858921221ABC3000EEC41D /* SlideToRevealImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC858920221ABC3000EEC41D /* SlideToRevealImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		CC858915221ABC1500EEC41D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC858918221ABC1500EEC41D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC85891A221ABC1500EEC41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC858920221ABC3000EEC41D /* BeforeAfterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeforeAfterView.swift; sourceTree = "<group>"; };
+		CC858920221ABC3000EEC41D /* SlideToRevealImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideToRevealImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 		CC85890D221ABC1400EEC41D /* SlideToRevealImage */ = {
 			isa = PBXGroup;
 			children = (
-				CC858920221ABC3000EEC41D /* BeforeAfterView.swift */,
+				CC858920221ABC3000EEC41D /* SlideToRevealImageView.swift */,
 				CC85890E221ABC1400EEC41D /* AppDelegate.swift */,
 				CC858910221ABC1400EEC41D /* ViewController.swift */,
 				CC858912221ABC1400EEC41D /* Main.storyboard */,
@@ -139,7 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC858911221ABC1400EEC41D /* ViewController.swift in Sources */,
-				CC858921221ABC3000EEC41D /* BeforeAfterView.swift in Sources */,
+				CC858921221ABC3000EEC41D /* SlideToRevealImageView.swift in Sources */,
 				CC85890F221ABC1400EEC41D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
