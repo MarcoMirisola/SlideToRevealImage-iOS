@@ -27,3 +27,7 @@ Marco Mirisola, info@marcomirisola.it
 ## License
 
 SlideToRevealImage is available under the MIT license. See the LICENSE file for more info.
+
+<h2> This project is heavy based from <a href="https://github.com/developer--/before_after_slider"> before_after_slider from @developer--</a> </h2>
+
+<h1><a href="https://github.com/MarcoMirisola/SlideToRevealImage">Android version</a> </h1>
