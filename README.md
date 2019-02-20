@@ -1,6 +1,5 @@
 # SlideToRevealImage
 
-[![CI Status](https://img.shields.io/travis/Marco Mirisola/SlideToRevealImage.svg?style=flat)](https://travis-ci.org/Marco Mirisola/SlideToRevealImage)
 [![Version](https://img.shields.io/cocoapods/v/SlideToRevealImage.svg?style=flat)](https://cocoapods.org/pods/SlideToRevealImage)
 [![License](https://img.shields.io/cocoapods/l/SlideToRevealImage.svg?style=flat)](https://cocoapods.org/pods/SlideToRevealImage)
 [![Platform](https://img.shields.io/cocoapods/p/SlideToRevealImage.svg?style=flat)](https://cocoapods.org/pods/SlideToRevealImage)
