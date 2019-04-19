@@ -22,11 +22,14 @@ public class SlideToRevealImageView: UIView {
     }
     
     @IBInspectable
-    public var thumbColor: UIColor = UIColor.white {
+    public var thumbImage: UIImage = UIImage() {
         didSet {
-            thumb.backgroundColor = thumbColor
+            thumb.image = thumbImage
         }
     }
+    
+    @IBInspectable
+    public var startPercentage: CGFloat = 50.0
 
     fileprivate lazy var imageView2: UIImageView = {
         let iv = UIImageView()
@@ -58,16 +61,17 @@ public class SlideToRevealImageView: UIView {
         return v
     }()
     
-    fileprivate lazy var thumb: UIView = {
-        let v = UIView()
-        v.backgroundColor = UIColor.white
+    fileprivate lazy var thumb: UIImageView = {
+        let v = UIImageView()
         v.translatesAutoresizingMaskIntoConstraints = false
+        v.contentMode = .scaleAspectFit
         v.clipsToBounds = true
         return v
     }()
     
+    
     lazy fileprivate var setupLeadingAndOriginRect: Void = {
-        self.leading.constant = self.frame.width / 2
+        self.leading.constant = self.frame.width * startPercentage / 100.0
         self.layoutIfNeeded()
         self.originRect = self.image1Wrapper.frame
     }()
@@ -126,17 +130,17 @@ extension SlideToRevealImageView {
             thumbWrapper.leadingAnchor.constraint(equalTo: image1Wrapper.leadingAnchor, constant: -20),
             thumbWrapper.widthAnchor.constraint(equalToConstant: 40)
         ])
-        
+
         NSLayoutConstraint.activate([
             thumb.centerXAnchor.constraint(equalTo: thumbWrapper.centerXAnchor, constant: 0),
             thumb.centerYAnchor.constraint(equalTo: thumbWrapper.centerYAnchor, constant: 0),
             thumb.widthAnchor.constraint(equalTo: thumbWrapper.widthAnchor, multiplier: 1),
-            thumb.heightAnchor.constraint(equalTo: thumbWrapper.widthAnchor, multiplier: 1)
+            thumb.heightAnchor.constraint(equalTo: thumbWrapper.heightAnchor, multiplier: 1)
         ])
         
-        leading.constant = frame.width / 2
+        leading.constant = 0
         
-        thumb.layer.cornerRadius = 20
+//        thumb.layer.cornerRadius = 20
         imageView1.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1).isActive = true
         
         let tap = UIPanGestureRecognizer(target: self, action: #selector(gesture(sender:)))

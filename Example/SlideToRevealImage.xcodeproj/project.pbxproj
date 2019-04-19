@@ -15,6 +15,9 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		AB685D06249B820E3DF38109 /* Pods_SlideToRevealImage_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F6EFFF16A884F209BB31D8 /* Pods_SlideToRevealImage_Example.framework */; };
+		CC134D142268CF31003F4D67 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = CC134D122268CF31003F4D67 /* image2.png */; };
+		CC134D152268CF31003F4D67 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = CC134D132268CF31003F4D67 /* image1.png */; };
+		CC134D172268D577003F4D67 /* scroll.png in Resources */ = {isa = PBXBuildFile; fileRef = CC134D162268D576003F4D67 /* scroll.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		72F6EFFF16A884F209BB31D8 /* Pods_SlideToRevealImage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideToRevealImage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D166A2DBA92B0EF775644A /* Pods-SlideToRevealImage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideToRevealImage_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideToRevealImage_Example/Pods-SlideToRevealImage_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B401C77826D5212CAFEC6447 /* Pods-SlideToRevealImage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideToRevealImage_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideToRevealImage_Tests/Pods-SlideToRevealImage_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CC134D122268CF31003F4D67 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
+		CC134D132268CF31003F4D67 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
+		CC134D162268D576003F4D67 /* scroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scroll.png; sourceTree = "<group>"; };
 		DCD724165F867DB28F5F5BB6 /* SlideToRevealImage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SlideToRevealImage.podspec; path = ../SlideToRevealImage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DF66F1213FF0C52BA15FF53B /* Pods-SlideToRevealImage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideToRevealImage_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideToRevealImage_Tests/Pods-SlideToRevealImage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF9343D4B4990E5C6E17ECFF /* Pods_SlideToRevealImage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideToRevealImage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,10 +99,13 @@
 		607FACD21AFB9204008FA782 /* Example for SlideToRevealImage */ = {
 			isa = PBXGroup;
 			children = (
+				CC134D162268D576003F4D67 /* scroll.png */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				CC134D132268CF31003F4D67 /* image1.png */,
+				CC134D122268CF31003F4D67 /* image2.png */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -228,6 +237,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -248,7 +258,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				CC134D152268CF31003F4D67 /* image1.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				CC134D142268CF31003F4D67 /* image2.png in Resources */,
+				CC134D172268D577003F4D67 /* scroll.png in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
