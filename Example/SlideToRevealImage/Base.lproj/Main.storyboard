@@ -29,6 +29,9 @@
                                     <userDefinedRuntimeAttribute type="image" keyPath="image1" value="blue"/>
                                     <userDefinedRuntimeAttribute type="image" keyPath="image2" value="red"/>
                                     <userDefinedRuntimeAttribute type="image" keyPath="thumbImage" value="scroll.png"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startPercentage">
+                                        <real key="value" value="500"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
