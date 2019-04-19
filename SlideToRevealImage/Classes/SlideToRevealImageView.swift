@@ -22,9 +22,9 @@ public class SlideToRevealImageView: UIView {
     }
     
     @IBInspectable
-    public var thumbColor: UIColor = UIColor.white {
+    public var thumbImage: UIImage = UIImage() {
         didSet {
-            thumb.backgroundColor = thumbColor
+            thumb.image = thumbImage
         }
     }
 
@@ -58,10 +58,10 @@ public class SlideToRevealImageView: UIView {
         return v
     }()
     
-    fileprivate lazy var thumb: UIView = {
-        let v = UIView()
-        v.backgroundColor = UIColor.white
+    fileprivate lazy var thumb: UIImageView = {
+        let v = UIImageView()
         v.translatesAutoresizingMaskIntoConstraints = false
+        v.contentMode = .scaleAspectFill
         v.clipsToBounds = true
         return v
     }()
@@ -126,7 +126,7 @@ extension SlideToRevealImageView {
             thumbWrapper.leadingAnchor.constraint(equalTo: image1Wrapper.leadingAnchor, constant: -20),
             thumbWrapper.widthAnchor.constraint(equalToConstant: 40)
         ])
-        
+
         NSLayoutConstraint.activate([
             thumb.centerXAnchor.constraint(equalTo: thumbWrapper.centerXAnchor, constant: 0),
             thumb.centerYAnchor.constraint(equalTo: thumbWrapper.centerYAnchor, constant: 0),
