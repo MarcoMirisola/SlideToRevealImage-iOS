@@ -1,6 +1,6 @@
 # SlideToRevealImage
 
-[![CI Status](https://img.shields.io/travis/MarcoMirisola/SlideToRevealImage.svg?style=flat)](https://travis-ci.org/MarcoMirisola/SlideToRevealImage)
+[![CI Status](https://img.shields.io/travis/MarcoMirisola/SlideToRevealImage-iOS.svg?style=flat)](https://travis-ci.org/MarcoMirisola/SlideToRevealImage-iOS)
 [![Version](https://img.shields.io/cocoapods/v/SlideToRevealImage.svg?style=flat)](https://cocoapods.org/pods/SlideToRevealImage)
 [![License](https://img.shields.io/cocoapods/l/SlideToRevealImage.svg?style=flat)](https://cocoapods.org/pods/SlideToRevealImage)
 [![Platform](https://img.shields.io/cocoapods/p/SlideToRevealImage.svg?style=flat)](https://cocoapods.org/pods/SlideToRevealImage)
@@ -22,7 +22,7 @@ pod 'SlideToRevealImage'
 
 ## Author
 
-MarcoMirisola, marco.mirisola@ettsolutions.com
+MarcoMirisola, info@marcomirisola.it
 
 ## License
 
