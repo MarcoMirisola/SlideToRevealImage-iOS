@@ -1,0 +1,16 @@
+PODS:
+  - SlideToRevealImage (0.1.0)
+
+DEPENDENCIES:
+  - SlideToRevealImage (from `../`)
+
+EXTERNAL SOURCES:
+  SlideToRevealImage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SlideToRevealImage: 7b763dc88347bf5eeb846429ba1fbc0933daa586
+
+PODFILE CHECKSUM: 6989d66c5034e0a7869b982cf420d27b53b3cda1
+
+COCOAPODS: 1.6.0

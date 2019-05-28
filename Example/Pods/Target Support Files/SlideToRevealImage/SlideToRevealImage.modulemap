@@ -1,0 +1,6 @@
+framework module SlideToRevealImage {
+  umbrella header "SlideToRevealImage-umbrella.h"
+
+  export *
+  module * { export * }
+}
