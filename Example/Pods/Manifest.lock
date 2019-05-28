@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SlideToRevealImage: b857473eeea1f7babcefd39fbf2995ca5c69dcf6
+  SlideToRevealImage: 7b763dc88347bf5eeb846429ba1fbc0933daa586
 
 PODFILE CHECKSUM: 6989d66c5034e0a7869b982cf420d27b53b3cda1
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0

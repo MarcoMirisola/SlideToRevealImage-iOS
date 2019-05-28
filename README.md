@@ -1,5 +1,6 @@
 # SlideToRevealImage
 
+[![CI Status](https://img.shields.io/travis/MarcoMirisola/SlideToRevealImage.svg?style=flat)](https://travis-ci.org/MarcoMirisola/SlideToRevealImage)
 [![Version](https://img.shields.io/cocoapods/v/SlideToRevealImage.svg?style=flat)](https://cocoapods.org/pods/SlideToRevealImage)
 [![License](https://img.shields.io/cocoapods/l/SlideToRevealImage.svg?style=flat)](https://cocoapods.org/pods/SlideToRevealImage)
 [![Platform](https://img.shields.io/cocoapods/p/SlideToRevealImage.svg?style=flat)](https://cocoapods.org/pods/SlideToRevealImage)
@@ -21,12 +22,8 @@ pod 'SlideToRevealImage'
 
 ## Author
 
-Marco Mirisola, info[at]marcomirisola.it
+MarcoMirisola, marco.mirisola@ettsolutions.com
 
 ## License
 
 SlideToRevealImage is available under the MIT license. See the LICENSE file for more info.
-
-<h2> This project is heavy based from <a href="https://github.com/ioramashvili/BeforeAfterSlider"> before_after_slider from @ioramashvili</a> </h2>
-
-<h1><a href="https://github.com/MarcoMirisola/SlideToRevealImage">Android version</a> </h1>

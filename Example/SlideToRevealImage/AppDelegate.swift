@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  SlideToRevealImage
 //
-//  Created by Marco Mirisola on 02/18/2019.
-//  Copyright (c) 2019 Marco Mirisola. All rights reserved.
+//  Created by MarcoMirisola on 05/28/2019.
+//  Copyright (c) 2019 MarcoMirisola. All rights reserved.
 //
 
 import UIKit

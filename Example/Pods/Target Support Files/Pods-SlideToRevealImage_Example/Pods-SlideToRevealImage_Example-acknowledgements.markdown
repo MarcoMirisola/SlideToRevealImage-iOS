@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## SlideToRevealImage
 
-Copyright (c) 2019 Marco Mirisola <marco.mirisola@ettsolutions.com>
+Copyright (c) 2019 MarcoMirisola <marco.mirisola@ettsolutions.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

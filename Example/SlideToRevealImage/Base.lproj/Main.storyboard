@@ -21,31 +21,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="72D-kf-Ib6" customClass="SlideToRevealImageView" customModule="SlideToRevealImage">
-                                <rect key="frame" x="67" y="74" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Eu-gX-EdT" customClass="SlideToRevealImageView" customModule="SlideToRevealImage">
+                                <rect key="frame" x="36" y="40" width="303" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="image1" value="blue"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="image2" value="red"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="thumbImage" value="scroll.png"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="startPercentage">
-                                        <real key="value" value="500"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="7GB-ZI-teD"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8Eu-gX-EdT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="4Hx-mg-ZHG"/>
+                            <constraint firstItem="8Eu-gX-EdT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="8Sl-tS-mtB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Eu-gX-EdT" secondAttribute="trailing" constant="20" id="eVD-LJ-sm0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="slideToRevealView" destination="8Eu-gX-EdT" id="hYX-a7-Qcw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-495" y="158"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="blue" width="1280" height="720"/>
-        <image name="red" width="1280" height="720"/>
-        <image name="scroll.png" width="95" height="1480"/>
-    </resources>
 </document>
