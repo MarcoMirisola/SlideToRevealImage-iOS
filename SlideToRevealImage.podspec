@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SlideToRevealImage'
-  s.version          = '1.3'
+  s.version          = '1.3.1'
   s.summary          = 'Drag the image to show the one below'
 
 # This description is used to generate tags and improve search results.
