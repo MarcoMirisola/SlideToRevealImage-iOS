@@ -59,140 +59,177 @@ public class SlideToRevealImageView: UIView {
         startPercentages.append(startPercentage)
     }
     
+    var _setupTrailingAndLastX:Bool = false
     
-    lazy fileprivate var setupTrailingAndLastX: Void = {
-        for i in 0 ..< imageViews.count {
-            trailingAnchors[i].constant = -(self.frame.width * startPercentages[i] / 100.0)
-        }
-        self.layoutIfNeeded()
-        
-        for i in 0 ..< imageViews.count {
-            lastXs[i] = abs(trailingAnchors[i].constant)
-        }
-    }()
-    
-    override public func layoutSubviews() {
-        super.layoutSubviews()
-        _ = setupTrailingAndLastX
-    }
-    
-    
-    open func initialize() {
-        
-        addSubview(imageViewBase)
-        
-        for i in 0 ..< imageViews.count {
-            imageWrappers[i].addSubview(imageViews[i])
-            addSubview(imageWrappers[i])
-        }
-        
-        for i in 0 ..< imageViews.count {
-            thumbWrappers[i].addSubview(thumbViews[i])
-            addSubview(thumbWrappers[i])
-        }
-        
-        NSLayoutConstraint.activate([
-            imageViewBase.topAnchor.constraint(equalTo: topAnchor, constant: 0),
-            imageViewBase.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0),
-            imageViewBase.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
-            imageViewBase.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0)
-            ])
-        
-        
-        
-        for i in 0 ..< imageViews.count {
-            
-            let imageWrapper = imageWrappers[i]
-            trailingAnchors[i] = imageWrapper.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0)
-            
-            NSLayoutConstraint.activate([
-                imageWrapper.topAnchor.constraint(equalTo: topAnchor, constant: 0),
-                imageWrapper.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0),
-                imageWrapper.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
-                trailingAnchors[i]
-                ])
-            
-            let imageView = imageViews[i]
-            
-            NSLayoutConstraint.activate([
-                imageView.topAnchor.constraint(equalTo: imageWrapper.topAnchor, constant: 0),
-                imageView.bottomAnchor.constraint(equalTo: imageWrapper.bottomAnchor, constant: 0),
-                imageView.leadingAnchor.constraint(equalTo: imageWrapper.leadingAnchor, constant: 0)
-                ])
-            
-            let thumbWrapper = thumbWrappers[i]
-            
-            let topAnchor: NSLayoutConstraint
-            
-            if (i == 0) {
-                topAnchor = thumbWrapper.topAnchor.constraint(equalTo: imageWrapper.topAnchor, constant: 0)
+    fileprivate var setupTrailingAndLastX: Bool {
+        if(_setupTrailingAndLastX == false){
+            for i in 0 ..< imageViews.count {
+                trailingAnchors[i].constant = -(self.frame.width * startPercentages[i] / 100.0)
             }
-            else {
-                topAnchor = thumbWrapper.topAnchor.constraint(equalTo: thumbWrappers[i-1].bottomAnchor, constant: 0)
+            self.layoutIfNeeded()
+            
+            for i in 0 ..< imageViews.count {
+                lastXs[i] = abs(trailingAnchors[i].constant)
+            }
+            _setupTrailingAndLastX = true
+        }
+        return _setupTrailingAndLastX
+    }
+        
+        
+        override public func layoutSubviews() {
+            super.layoutSubviews()
+            _ = setupTrailingAndLastX
+        }
+        
+        open func clean(){
+            for i in 0 ..< imageViews.count {
+                imageViews[i].removeFromSuperview()
+                imageWrappers[i].removeFromSuperview()
+                
+                thumbViews[i].removeFromSuperview()
+                thumbWrappers[i].gestureRecognizers?.forEach{
+                    thumbWrappers[i].removeGestureRecognizer($0)
+                }
+                thumbWrappers[i].removeFromSuperview()
+            }
+            
+            imageViewBase.constraints.forEach{
+                imageViewBase.removeConstraint($0)
+            }
+            imageViewBase.removeFromSuperview()
+            
+            trailingAnchors = [NSLayoutConstraint]()
+            lastXs = [CGFloat]()
+            
+            imageViews = [UIImageView]()
+            imageWrappers = [UIView]()
+            
+            thumbViews = [UIImageView]()
+            thumbWrappers = [UIView]()
+            
+            startPercentages = [CGFloat]()
+            
+            imageViewBase = UIImageView()
+            
+            _setupTrailingAndLastX = false
+        }
+        
+        open func initialize() {
+            
+            addSubview(imageViewBase)
+            
+            for i in 0 ..< imageViews.count {
+                imageWrappers[i].addSubview(imageViews[i])
+                addSubview(imageWrappers[i])
+            }
+            
+            for i in 0 ..< imageViews.count {
+                thumbWrappers[i].addSubview(thumbViews[i])
+                addSubview(thumbWrappers[i])
             }
             
             NSLayoutConstraint.activate([
-                topAnchor,
-                thumbWrapper.heightAnchor.constraint(equalTo: imageWrapper.heightAnchor, multiplier: CGFloat(CGFloat(1)/CGFloat(imageViews.count))),
-                thumbWrapper.trailingAnchor.constraint(equalTo: imageWrapper.trailingAnchor, constant: 20),
-                thumbWrapper.widthAnchor.constraint(equalToConstant: 40)
+                imageViewBase.topAnchor.constraint(equalTo: topAnchor, constant: 0),
+                imageViewBase.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0),
+                imageViewBase.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
+                imageViewBase.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0)
                 ])
             
-            let thumb = thumbViews[i]
             
-            NSLayoutConstraint.activate([
-                thumb.centerXAnchor.constraint(equalTo: thumbWrapper.centerXAnchor, constant: 0),
-                thumb.centerYAnchor.constraint(equalTo: thumbWrapper.centerYAnchor, constant: 0),
-                thumb.widthAnchor.constraint(equalTo: thumbWrapper.widthAnchor, multiplier: 1),
-                thumb.heightAnchor.constraint(equalTo: thumbWrapper.heightAnchor, multiplier: 1)
-                ])
             
-        }
-        
-        for i in 0 ..< imageViews.count {
-            trailingAnchors[i].constant = 0
-        }
-        
-        for i in 0 ..< imageViews.count {
-            imageViews[i].widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1).isActive = true
-        }
-        
-        for i in 0 ..< imageViews.count {
-            let thumbWrapper = thumbWrappers[i]
+            for i in 0 ..< imageViews.count {
+                
+                let imageWrapper = imageWrappers[i]
+                trailingAnchors[i] = imageWrapper.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0)
+                
+                NSLayoutConstraint.activate([
+                    imageWrapper.topAnchor.constraint(equalTo: topAnchor, constant: 0),
+                    imageWrapper.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0),
+                    imageWrapper.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
+                    trailingAnchors[i]
+                    ])
+                
+                let imageView = imageViews[i]
+                
+                NSLayoutConstraint.activate([
+                    imageView.topAnchor.constraint(equalTo: imageWrapper.topAnchor, constant: 0),
+                    imageView.bottomAnchor.constraint(equalTo: imageWrapper.bottomAnchor, constant: 0),
+                    imageView.leadingAnchor.constraint(equalTo: imageWrapper.leadingAnchor, constant: 0)
+                    ])
+                
+                let thumbWrapper = thumbWrappers[i]
+                
+                let topAnchor: NSLayoutConstraint
+                
+                if (i == 0) {
+                    topAnchor = thumbWrapper.topAnchor.constraint(equalTo: imageWrapper.topAnchor, constant: 0)
+                }
+                else {
+                    topAnchor = thumbWrapper.topAnchor.constraint(equalTo: thumbWrappers[i-1].bottomAnchor, constant: 0)
+                }
+                
+                NSLayoutConstraint.activate([
+                    topAnchor,
+                    thumbWrapper.heightAnchor.constraint(equalTo: imageWrapper.heightAnchor, multiplier: CGFloat(CGFloat(1)/CGFloat(imageViews.count))),
+                    thumbWrapper.trailingAnchor.constraint(equalTo: imageWrapper.trailingAnchor, constant: 20),
+                    thumbWrapper.widthAnchor.constraint(equalToConstant: 40)
+                    ])
+                
+                let thumb = thumbViews[i]
+                
+                NSLayoutConstraint.activate([
+                    thumb.centerXAnchor.constraint(equalTo: thumbWrapper.centerXAnchor, constant: 0),
+                    thumb.centerYAnchor.constraint(equalTo: thumbWrapper.centerYAnchor, constant: 0),
+                    thumb.widthAnchor.constraint(equalTo: thumbWrapper.widthAnchor, multiplier: 1),
+                    thumb.heightAnchor.constraint(equalTo: thumbWrapper.heightAnchor, multiplier: 1)
+                    ])
+                
+            }
             
-            let tap = CustomGesture(target: self, action: #selector(gesture(sender:)))
-            tap.sliderIndex = i
-            thumbWrapper.isUserInteractionEnabled = true
-            thumbWrapper.addGestureRecognizer(tap)
+            for i in 0 ..< imageViews.count {
+                trailingAnchors[i].constant = 0
+            }
+            
+            for i in 0 ..< imageViews.count {
+                imageViews[i].widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1).isActive = true
+            }
+            
+            for i in 0 ..< imageViews.count {
+                let thumbWrapper = thumbWrappers[i]
+                
+                let tap = CustomGesture(target: self, action: #selector(gesture(sender:)))
+                tap.sliderIndex = i
+                thumbWrapper.isUserInteractionEnabled = true
+                thumbWrapper.addGestureRecognizer(tap)
+            }
         }
         
+        
+        @objc func gesture(sender: CustomGesture) {
+            
+            let trailing = trailingAnchors[sender.sliderIndex]
+            let lastX = lastXs[sender.sliderIndex]
+            
+            
+            let translation = sender.translation(in: self)
+            switch sender.state {
+            case .began, .changed:
+                
+                var newTrailing = -(lastX - translation.x)
+                newTrailing = min(newTrailing, 0)
+                newTrailing = max(-frame.width, newTrailing)
+                trailing.constant = newTrailing
+                
+                layoutIfNeeded()
+            case .ended, .cancelled:
+                lastXs[sender.sliderIndex] = abs(trailing.constant)
+            default: break
+            }
+        }
     }
     
     
-    @objc func gesture(sender: CustomGesture) {
-        
-        let trailing = trailingAnchors[sender.sliderIndex]
-        let lastX = lastXs[sender.sliderIndex]
-        
-        
-        let translation = sender.translation(in: self)
-        switch sender.state {
-        case .began, .changed:
-            
-            var newTrailing = -(lastX - translation.x)
-            newTrailing = min(newTrailing, 0)
-            newTrailing = max(-frame.width, newTrailing)
-            trailing.constant = newTrailing
-            
-            layoutIfNeeded()
-        case .ended, .cancelled:
-            lastXs[sender.sliderIndex] = abs(trailing.constant)
-        default: break
-        }
-    }
-}
-
-
-class CustomGesture: UIPanGestureRecognizer {
-    var sliderIndex: Int!
+    class CustomGesture: UIPanGestureRecognizer {
+        var sliderIndex: Int!
 }
