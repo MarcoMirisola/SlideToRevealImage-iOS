@@ -17,6 +17,7 @@ public class SlideToRevealImageView: UIView {
     
     fileprivate var imageViewBase: UIImageView = UIImageView()
     
+    fileprivate var _thumbAtBottom: Bool = false
     
     open func setBaseImage(image: UIImage) {
         let iv = UIImageView()
@@ -25,6 +26,10 @@ public class SlideToRevealImageView: UIView {
         iv.clipsToBounds = true
         iv.image = image
         imageViewBase = iv
+    }
+    
+    func setThumbAtBottom(boolean: Bool) {
+        _thumbAtBottom = boolean
     }
     
     open func addImage(image : UIImage, thumb: UIImage, startPercentage: CGFloat) {
@@ -169,14 +174,24 @@ public class SlideToRevealImageView: UIView {
                     topAnchor = thumbWrapper.topAnchor.constraint(equalTo: thumbWrappers[i-1].bottomAnchor, constant: 0)
                 }
                 
-                NSLayoutConstraint.activate([
-                    topAnchor,
-                    thumbWrapper.heightAnchor.constraint(equalTo: imageWrapper.heightAnchor, multiplier: CGFloat(CGFloat(1)/CGFloat(imageViews.count))),
-                    thumbWrapper.trailingAnchor.constraint(equalTo: imageWrapper.trailingAnchor, constant: 20),
-                    thumbWrapper.widthAnchor.constraint(equalToConstant: 40)
-                    ])
-                
                 let thumb = thumbViews[i]
+                
+                if(_thumbAtBottom) {
+                    NSLayoutConstraint.activate([
+                                       thumbWrapper.bottomAnchor.constraint(equalTo: imageWrapper.bottomAnchor, constant: 0),
+                                       thumbWrapper.heightAnchor.constraint(equalToConstant: (thumb.image?.size.height)!),
+                                       thumbWrapper.trailingAnchor.constraint(equalTo: imageWrapper.trailingAnchor, constant: 20),
+                                       thumbWrapper.widthAnchor.constraint(equalToConstant: 40)
+                                       ])
+                } else {
+                    NSLayoutConstraint.activate([
+                        topAnchor,
+                        thumbWrapper.heightAnchor.constraint(equalTo: imageWrapper.heightAnchor, multiplier: CGFloat(CGFloat(1)/CGFloat(imageViews.count))),
+                        thumbWrapper.trailingAnchor.constraint(equalTo: imageWrapper.trailingAnchor, constant: 20),
+                        thumbWrapper.widthAnchor.constraint(equalToConstant: 40)
+                        ])
+                }
+                
                 
                 NSLayoutConstraint.activate([
                     thumb.centerXAnchor.constraint(equalTo: thumbWrapper.centerXAnchor, constant: 0),

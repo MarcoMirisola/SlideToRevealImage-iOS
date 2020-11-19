@@ -30,8 +30,9 @@ class ViewController: UIViewController {
     func initView(){
         slideToRevealView.setBaseImage(image: UIImage(named: "image")!)
         slideToRevealView.addImage(image: UIImage(named: "image_bw_1")!, thumb: UIImage(named: "scroll")!, startPercentage: 25)
-        slideToRevealView.addImage(image: UIImage(named: "image_bw_2")!, thumb: UIImage(named: "scroll")!, startPercentage: 50)
-        slideToRevealView.addImage(image: UIImage(named: "image_bw_3")!, thumb: UIImage(named: "scroll")!, startPercentage: 75)
+//        slideToRevealView.addImage(image: UIImage(named: "image_bw_2")!, thumb: UIImage(named: "scroll")!, startPercentage: 50)
+//        slideToRevealView.addImage(image: UIImage(named: "image_bw_3")!, thumb: UIImage(named: "scroll")!, startPercentage: 75)
+        slideToRevealView.setThumbAtBottom(thumbAtBottom: true)
         slideToRevealView.initialize()
     }
 }

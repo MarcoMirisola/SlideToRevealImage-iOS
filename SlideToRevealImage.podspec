@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SlideToRevealImage'
-  s.version          = '1.3.1'
+  s.version          = '1.3.2'
   s.summary          = 'Drag the image to show the one below'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/MarcoMirisola/SlideToRevealImage-iOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '14.2'
   s.swift_version         = '5.0'
 
   s.source_files = 'SlideToRevealImage/Classes/**/*'
