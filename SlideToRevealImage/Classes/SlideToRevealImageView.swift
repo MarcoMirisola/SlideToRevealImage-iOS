@@ -28,7 +28,7 @@ public class SlideToRevealImageView: UIView {
         imageViewBase = iv
     }
     
-    func setThumbAtBottom(boolean: Bool) {
+    open func setThumbAtBottom(boolean: Bool) {
         _thumbAtBottom = boolean
     }
     
